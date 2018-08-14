@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nyc"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="191dp"
+        android:layout_height="171dp"
+        android:layout_marginBottom="384dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginStart="104dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_herevan_round" />
+
+    <EditText
+        android:id="@+id/editEmailLogar"
+        android:layout_width="278dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="44dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:drawableStart="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="Digite seu e-mail"
+        android:inputType="text|textEmailAddress"
+        android:textColorLink="@android:color/darker_gray"
+        android:textCursorDrawable="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogin"
+        tools:ignore="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editSenhaLogar"
+        android:layout_width="279dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_action_senha"
+        android:drawableStart="@drawable/ic_action_senha"
+        android:ems="10"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmailLogar"/>
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="280dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="28dp"
+        android:background="#00b300"
+        android:elevation="10dp"
+        android:text="Entrar"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSenhaLogar" />
+
+    <TextView
+        android:id="@+id/txtCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginBottom="76dp"
+        android:linksClickable="true"
+        android:onClick="cadastro"
+        android:text="Cadastre-se agora"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
